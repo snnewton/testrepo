@@ -69,6 +69,12 @@ Note: All steps must run on 'local' resource</description>
             </property>
           </propertySheet>
         </property>
+        <property>
+          <propertyName>snnGitURL</propertyName>
+          <description>url for the repository for this project</description>
+          <expandable>1</expandable>
+          <value>git@github.com:snnewton/testrepo.git</value>
+        </property>
       </propertySheet>
       <formalParameter>
         <formalParameterName>branchName</formalParameterName>
@@ -85,15 +91,6 @@ Note: All steps must run on 'local' resource</description>
         <expansionDeferred>0</expansionDeferred>
         <required>1</required>
         <type>textarea</type>
-      </formalParameter>
-      <formalParameter>
-        <formalParameterName>gitUrl</formalParameterName>
-        <defaultValue>git@github.com:snnewton/testrepo.git</defaultValue>
-        <description>URL of the Git repository.
-</description>
-        <expansionDeferred>0</expansionDeferred>
-        <required>1</required>
-        <type>entry</type>
       </formalParameter>
       <step>
         <stepName>export</stepName>
@@ -132,7 +129,7 @@ Note: All steps must run on 'local' resource</description>
           <property>
             <propertyName>gitUrl</propertyName>
             <expandable>1</expandable>
-            <value>$[gitUrl]</value>
+            <value>$[/myProcedure/snnGitURL]</value>
           </property>
           <property>
             <propertyName>projectNameToExport</propertyName>

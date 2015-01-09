@@ -135,7 +135,7 @@
       </formalParameter>
       <formalParameter>
         <formalParameterName>gitConnectionUrl</formalParameterName>
-        <defaultValue>git@github.com:fs-eng/continuous-delivery</defaultValue>
+        <defaultValue>git@github.com:snnewton/testrepo.git</defaultValue>
         <description/>
         <expansionDeferred>0</expansionDeferred>
         <required>1</required>
@@ -162,7 +162,7 @@
         <releaseMode>none</releaseMode>
         <resourceName/>
         <subprocedure>x_ImportProjectFromScm</subprocedure>
-        <subproject>ContinuousDelivery</subproject>
+        <subproject>/plugins/ContinuousDelivery/project</subproject>
         <timeLimit/>
         <timeLimitUnits>minutes</timeLimitUnits>
         <workspaceName/>
@@ -182,6 +182,11 @@
             <propertyName>gitConnectionUrl</propertyName>
             <expandable>1</expandable>
             <value>$[gitConnectionUrl]</value>
+          </property>
+          <property>
+            <propertyName>importProjectSuffix</propertyName>
+            <expandable>1</expandable>
+            <value>$[branchName]</value>
           </property>
           <property>
             <propertyName>overwriteIfAlreadyExists</propertyName>
