@@ -1,0 +1,6 @@
+version: 1.0
+name: testrepo
+build:
+- name: build-plugin
+  type: ecplugin
+
