@@ -12,14 +12,14 @@
   <artifactId>stuart-newton</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <!-- the name here is used as the ElectricCommander plugin key and label -->
+  <!-- the name here is used as the ElectricCommander plugin key and label. -->
   <name>StuartNewton</name>
   <url>http://maven.apache.org</url>
 
   <scm>
-    <connection>scm:git:git@github.com:fs-eng/stuart-newton.git</connection>
-    <developerConnection>scm:git:git@github.com:fs-eng/stuart-newton.git</developerConnection>
-    <url>https://github.com/fs-eng/stuart-newton</url>
+    <connection>scm:git:git@github.com:snnewton/testrepo.git</connection>
+    <developerConnection>scm:git:git@github.com:snnewton/testrepo.git</developerConnection>
+    <url>https://github.com/snnewton/testrepo</url>
   </scm>
 
   <properties>
