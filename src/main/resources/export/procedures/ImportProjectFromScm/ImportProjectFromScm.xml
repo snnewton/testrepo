@@ -120,6 +120,19 @@
                     </property>
                   </propertySheet>
                 </property>
+                <property>
+                  <propertyName>snnGitConnectionUrl</propertyName>
+                  <propertySheet>
+                    <acl>
+                      <inheriting>1</inheriting>
+                    </acl>
+                    <property>
+                      <propertyName>formType</propertyName>
+                      <expandable>1</expandable>
+                      <value>standard</value>
+                    </property>
+                  </propertySheet>
+                </property>
               </propertySheet>
             </property>
           </propertySheet>
@@ -134,20 +147,20 @@
         <type>entry</type>
       </formalParameter>
       <formalParameter>
-        <formalParameterName>gitConnectionUrl</formalParameterName>
-        <defaultValue>git@github.com:snnewton/testrepo.git</defaultValue>
-        <description/>
-        <expansionDeferred>0</expansionDeferred>
-        <required>1</required>
-        <type>entry</type>
-      </formalParameter>
-      <formalParameter>
         <formalParameterName>overwriteIfAlreadyExists</formalParameterName>
         <defaultValue/>
         <description>true if it should overwrite an already existing project.</description>
         <expansionDeferred>0</expansionDeferred>
         <required>1</required>
         <type>checkbox</type>
+      </formalParameter>
+      <formalParameter>
+        <formalParameterName>snnGitConnectionUrl</formalParameterName>
+        <defaultValue>git@github.com:snnewton/testrepo.git</defaultValue>
+        <description/>
+        <expansionDeferred>0</expansionDeferred>
+        <required>1</required>
+        <type>entry</type>
       </formalParameter>
       <step>
         <stepName>importProjectFromScm</stepName>
@@ -181,7 +194,7 @@
           <property>
             <propertyName>gitConnectionUrl</propertyName>
             <expandable>1</expandable>
-            <value>$[gitConnectionUrl]</value>
+            <value>$[snnGitConnectionUrl]</value>
           </property>
           <property>
             <propertyName>importProjectSuffix</propertyName>
