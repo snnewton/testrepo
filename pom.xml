@@ -8,18 +8,18 @@
     <relativePath/>
   </parent>
 
-  <groupId>org.familysearch.continuous-delivery</groupId>
-  <artifactId>continuous-delivery</artifactId>
+  <groupId>org.familysearch.stuart-newton</groupId>
+  <artifactId>stuart-newton</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <!-- the name here is used as the ElectricCommander plugin key and label -->
-  <name>ContinuousDelivery</name>
+  <name>StuartNewton</name>
   <url>http://maven.apache.org</url>
 
   <scm>
-    <connection>scm:git:git@github.com:fs-eng/continuous-delivery.git</connection>
-    <developerConnection>scm:git:git@github.com:fs-eng/continuous-delivery.git</developerConnection>
-    <url>https://github.com/fs-eng/continuous-delivery</url>
+    <connection>scm:git:git@github.com:fs-eng/stuart-newton.git</connection>
+    <developerConnection>scm:git:git@github.com:fs-eng/stuart-newton.git</developerConnection>
+    <url>https://github.com/fs-eng/stuart-newton</url>
   </scm>
 
   <properties>
