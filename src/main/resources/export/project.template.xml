@@ -20,6 +20,18 @@
         <principalName>project: PROJECT-NAME-MAJOR.MINOR</principalName>
         <principalType>user</principalType>
       </aclEntry>
+      <aclEntry>
+        <allowChangePermissions>1</allowChangePermissions>
+        <allowExecute>0</allowExecute>
+        <allowModify>1</allowModify>
+        <allowRead>0</allowRead>
+        <denyChangePermissions>0</denyChangePermissions>
+        <denyExecute>0</denyExecute>
+        <denyModify>0</denyModify>
+        <denyRead>0</denyRead>
+        <principalName>snnewton</principalName>
+        <principalType>user</principalType>
+      </aclEntry>
     </acl>
     <propertySheet>
       <acl>
@@ -43,6 +55,37 @@
             <description>The version of the ElectricCommanderRuby API used by this plugin</description>
             <expandable>1</expandable>
             <value>1.1.112</value>
+          </property>
+        </propertySheet>
+      </property>
+      <property>
+        <propertyName>deleteLinks</propertyName>
+        <propertySheet>
+          <acl>
+            <inheriting>1</inheriting>
+          </acl>
+          <property>
+            <propertyName>actualParameter0</propertyName>
+            <propertySheet>
+              <acl>
+                <inheriting>1</inheriting>
+              </acl>
+              <property>
+                <propertyName>actualParameterName</propertyName>
+                <expandable>1</expandable>
+                <value>projToDelete</value>
+              </property>
+              <property>
+                <propertyName>value</propertyName>
+                <expandable>1</expandable>
+                <value>PROJECT-NAME-MAJOR.MINOR</value>
+              </property>
+            </propertySheet>
+          </property>
+          <property>
+            <propertyName>numParameters</propertyName>
+            <expandable>1</expandable>
+            <value>1</value>
           </property>
         </propertySheet>
       </property>
@@ -77,6 +120,11 @@
         <propertyName>ec_tags</propertyName>
         <expandable>1</expandable>
         <value>  </value>
+      </property>
+      <property>
+        <propertyName>ec_visibility</propertyName>
+        <expandable>1</expandable>
+        <value>EC-VISIBILITY-VALUE</value>
       </property>
       <property>
         <propertyName>mavenRepoHostURL</propertyName>
