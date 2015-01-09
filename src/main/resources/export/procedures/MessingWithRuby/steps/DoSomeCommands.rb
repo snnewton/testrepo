@@ -1,7 +1,5 @@
 require "ec"
 
-# do some electric commander stuff here
-
 EC::Commander.set_property("/myJob/xxx", "someValue")
 jinfo = EC::Commander.get_property("/myJob/xxx")
 puts jinfo
