@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<exportedData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="commander.xsd" version="61" buildLabel="build_4.2_74531_2014.06.26_10:37:53" buildVersion="4.2.5.74531" passkey="9980af978a62599fe75c0bc510ef94a431b836ee">
+  <exportPath>/projects/PROJECT-NAME-MAJOR.MINOR</exportPath>
+  <project>
+    <projectName>PROJECT-NAME-MAJOR.MINOR</projectName>
+    <description>Experimentation</description>
+    <resourceName>Java7</resourceName>
+    <workspaceName/>
+    <acl>
+      <inheriting>1</inheriting>
+      <aclEntry>
+        <allowChangePermissions>1</allowChangePermissions>
+        <allowExecute>1</allowExecute>
+        <allowModify>1</allowModify>
+        <allowRead>1</allowRead>
+        <denyChangePermissions>0</denyChangePermissions>
+        <denyExecute>0</denyExecute>
+        <denyModify>0</denyModify>
+        <denyRead>0</denyRead>
+        <principalName>project: PROJECT-NAME-MAJOR.MINOR</principalName>
+        <principalType>user</principalType>
+      </aclEntry>
+    </acl>
+    <propertySheet>
+      <acl>
+        <inheriting>1</inheriting>
+      </acl>
+      <property>
+        <propertyName>Gems</propertyName>
+        <description>The Ruby gems and versions used by this version of the plugin</description>
+        <propertySheet>
+          <acl>
+            <inheriting>1</inheriting>
+          </acl>
+          <property>
+            <propertyName>cdo-ruby-api</propertyName>
+            <description>The version of the Ruby api used by this procedure</description>
+            <expandable>1</expandable>
+            <value>0.1.62</value>
+          </property>
+          <property>
+            <propertyName>ecapi</propertyName>
+            <description>The version of the ElectricCommanderRuby API used by this plugin</description>
+            <expandable>1</expandable>
+            <value>1.1.112</value>
+          </property>
+        </propertySheet>
+      </property>
+      <property>
+        <propertyName>ecExport</propertyName>
+        <description/>
+        <propertySheet>
+          <acl>
+            <inheriting>1</inheriting>
+          </acl>
+          <property>
+            <propertyName>exportDirectory</propertyName>
+            <description/>
+            <expandable>1</expandable>
+            <value>src/main/resources/export</value>
+          </property>
+          <property>
+            <propertyName>projectFilename</propertyName>
+            <description/>
+            <expandable>1</expandable>
+            <value>src/main/resources/META-INF/project.xml</value>
+          </property>
+        </propertySheet>
+      </property>
+      <property>
+        <propertyName>dataProjectName</propertyName>
+        <description/>
+        <expandable>1</expandable>
+        <value>SLIDE-Data</value>
+      </property>
+      <property>
+        <propertyName>ec_tags</propertyName>
+        <expandable>1</expandable>
+        <value>  </value>
+      </property>
+      <property>
+        <propertyName>mavenRepoHostURL</propertyName>
+        <description/>
+        <expandable>1</expandable>
+        <value>https://mvn.fsglobal.net</value>
+      </property>
+      <property>
+        <propertyName>mavenRepoURL</propertyName>
+        <description>the maven repo to download artifacts from</description>
+        <expandable>1</expandable>
+        <value>$[/myProject/mavenRepoHostURL]/content/groups/dev</value>
+      </property>
+      <property>
+        <propertyName>project.version</propertyName>
+        <description/>
+        <expandable>1</expandable>
+        <value>${project.version}</value>
+      </property>
+      <property>
+        <propertyName>rubyHeader</propertyName>
+        <description>Header to be used for all ruby scripts specifying gem versions to be used if the gems are required.</description>
+        <expandable>1</expandable>
+        <value>gem "ecapi", "=$[/myProject/Gems/ecapi]"
+gem "cdo-ruby-api", "=$[/myProject/Gems/cdo-ruby-api]"</value>
+      </property>
+    </propertySheet>
+    <procedurePlaceholder>DeployRubyGems</procedurePlaceholder>
+    <procedurePlaceholder>ExportThisProjectToScm</procedurePlaceholder>
+    <procedurePlaceholder>ImportProjectFromScm</procedurePlaceholder>
+    <procedurePlaceholder>MakeCopyForDevelopment</procedurePlaceholder>
+    <procedurePlaceholder>MessingWithRuby</procedurePlaceholder>
+    <procedurePlaceholder>ProcedureWithSubs</procedurePlaceholder>
+    <procedurePlaceholder>PropertyRecursor</procedurePlaceholder>
+    <procedurePlaceholder>SetAProperty</procedurePlaceholder>
+    <procedurePlaceholder>SimpleProcedure</procedurePlaceholder>
+    <procedurePlaceholder>SubwithParameters</procedurePlaceholder>
+    <procedurePlaceholder>util_CopyProcedure</procedurePlaceholder>
+    <procedurePlaceholder>x_CreateHomePageLinkToProject</procedurePlaceholder>
+    <procedurePlaceholder>x_DeleteHomepageLinksAndProject</procedurePlaceholder>
+    <procedurePlaceholder>x_ExportSpecifiedProjectToXml</procedurePlaceholder>
+    <procedurePlaceholder>x_GrantPrivilegesToProject</procedurePlaceholder>
+    <procedurePlaceholder>x_ImportElectricCommanderProjectFromXml</procedurePlaceholder>
+    <procedurePlaceholder>x_RunProcedureAndWait</procedurePlaceholder>
+  </project>
+</exportedData>
