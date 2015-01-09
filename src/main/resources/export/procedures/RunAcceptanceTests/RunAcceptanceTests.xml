@@ -1,0 +1,17 @@
+<procedure>
+      <procedureName>RunAcceptanceTests</procedureName>
+      <description/>
+      <jobNameTemplate/>
+      <resourceName/>
+      <timeLimit/>
+      <timeLimitUnits>minutes</timeLimitUnits>
+      <workspaceName/>
+      <acl>
+        <inheriting>1</inheriting>
+      </acl>
+      <propertySheet>
+        <acl>
+          <inheriting>1</inheriting>
+        </acl>
+      </propertySheet>
+    </procedure>
