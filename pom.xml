@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.familysearch</groupId>
+    <artifactId>plugin-root</artifactId>
+    <version>1.10.b21</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>org.familysearch.continuous-delivery</groupId>
+  <artifactId>continuous-delivery</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <!-- the name here is used as the ElectricCommander plugin key and label -->
+  <name>ContinuousDelivery</name>
+  <url>http://maven.apache.org</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:fs-eng/continuous-delivery.git</connection>
+    <developerConnection>scm:git:git@github.com:fs-eng/continuous-delivery.git</developerConnection>
+    <url>https://github.com/fs-eng/continuous-delivery</url>
+  </scm>
+
+  <properties>
+    <java.compiler.version>1.7</java.compiler.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.1</version>
+        <configuration>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <id>attach-artifact</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>src/main/artifacts/splitProjectXml.xslt</file>
+                  <type>xslt</type>
+                  <classifier>splitProjectXml</classifier>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+</project>
