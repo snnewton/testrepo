@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.familysearch</groupId>
     <artifactId>plugin-root</artifactId>
-    <version>1.10.b21</version>
+    <version>1.10.b60</version>
     <relativePath/>
   </parent>
 
