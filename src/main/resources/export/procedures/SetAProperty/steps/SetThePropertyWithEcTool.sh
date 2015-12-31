@@ -1,1 +1,0 @@
-ectool setProperty /myJob/someStatus --value "All complete"
